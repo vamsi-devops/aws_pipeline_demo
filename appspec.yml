@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: cluster_create.yml
+    destination: /opt/codedeploy-agent/
+  - source: deploy.yml
+    destination: /opt/codedeploy-agent/
+hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: scripts/start_server
+      timeout: 3000
+      runas: root

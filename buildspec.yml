@@ -28,6 +28,7 @@ phases:
 artifacts:
   files:
     - cluster_create.yml
+    - index.html
     - appspec.yml
     - scripts/*
     - index.html

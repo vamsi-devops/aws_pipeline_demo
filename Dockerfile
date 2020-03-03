@@ -5,4 +5,3 @@ COPY index.html /var/www/html/
 RUN chmod +x /usr/sbin/httpd
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
-ENTRYPOINT ["/bin/bash"]

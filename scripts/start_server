@@ -1,5 +1,5 @@
 #!/bin/bash
-
+export cluster_region_name="eu-wes-3"
 curl -o kubectl https://amazon-eks.s3-us-west-2.amazonaws.com/1.14.6/2019-08-22/bin/linux/amd64/kubectl
 chmod +x ./kubectl
 mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$PATH:$HOME/bin
@@ -12,7 +12,7 @@ pwd
 
 ls -ltr
 
-eksctl get clusters --region=eu-west-2 | grep basic-cluster1
+eksctl get clusters --region=${cluster_region_name} | grep basic-cluster1
 
 status=$?
 if [ $status  -eq 0 ]
@@ -22,7 +22,7 @@ else
 eksctl create cluster -f cluster_create.yml
 fi
 
-aws eks  update-kubeconfig --region ca-central-1 --name basic-cluster1
+aws eks  update-kubeconfig --region ${cluster_region_name} --name basic-cluster1
 kubectl get nodes
 kubectl delete -f deploy.yml
 kubectl apply -f deploy.yml

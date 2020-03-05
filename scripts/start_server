@@ -26,5 +26,5 @@ aws eks  update-kubeconfig --region ${cluster_region_name} --name basic-cluster1
 kubectl get nodes
 kubectl delete -f deploy.yml
 kubectl apply -f deploy.yml
-kubectl delete svc my-service
-kubectl expose deployment hello-world --type=LoadBalancer --name=my-service
+kubectl delete svc java-demo-service
+kubectl expose deployment java-demo --type=LoadBalancer --name=java-demo-service

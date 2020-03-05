@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app.kubernetes.io/name: load-balancer-example
-  name: java_demo
+  name: java-demo
 spec:
   replicas: 5
   selector:
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - image: 899488875890.dkr.ecr.ap-northeast-1.amazonaws.com/pipeline-demo-repo
-        name: java_demo
+        name: java-demo
         ports:
         - containerPort: 8080

@@ -33,7 +33,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">DEMO ON AWS EKS INTEGRATION WITH AWS CODEPIPELINE</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Your Favorite Source of Digital Offerings</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -62,7 +62,7 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h1 class="text-uppercase">
-              <strong>Your Favorite Source of Digital Offerings</strong>
+              <strong>DEMO ON AWS EKS INTEGRATION WITH AWS CODEPIPELINE</strong>
             </h1>
             <hr>
           </div>

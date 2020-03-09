@@ -15,7 +15,7 @@ spec:
         app.kubernetes.io/name: load-balancer-example
     spec:
       containers:
-      - image: 899488875890.dkr.ecr.ap-northeast-1.amazonaws.com/ecr-eks:latest
+      - image: 899488875890.dkr.ecr.ap-northeast-1.amazonaws.com/aws-eks-demo:latest
         name: java-demo
         ports:
         - containerPort: 8080

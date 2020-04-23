@@ -5,7 +5,7 @@ metadata:
     app.kubernetes.io/name: load-balancer-example
   name: java-demo
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       app.kubernetes.io/name: load-balancer-example
@@ -15,7 +15,7 @@ spec:
         app.kubernetes.io/name: load-balancer-example
     spec:
       containers:
-      - image: 899488875890.dkr.ecr.ap-northeast-1.amazonaws.com/aws-eks-repo:latest
+      - image: 631429463780.dkr.ecr.ap-northeast-1.amazonaws.com/ecr_demo_repo:latest
         name: java-demo
         ports:
         - containerPort: 8080

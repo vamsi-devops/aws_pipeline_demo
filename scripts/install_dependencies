@@ -2,3 +2,5 @@
 #yum install -y httpd
 
 rm -rf /var/www/html
+/opt/codedeploy-agent/deploy.yml
+/opt/codedeploy-agent/cluster_create.yml
